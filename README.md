@@ -1,10 +1,23 @@
 # snowball-stemmer
 
-FIXME: write description
+Wrapper around the Snowball stemmer algorithm. See: http://snowball.tartarus.org
 
 ## Usage
 
-FIXME: write
+Once running `lein compile`, enter `lein repl` and try out the following:
+
+```clojure
+(use 'stemmer.snowball)
+; nil
+(def eng (stemmer "english"))
+; #'user/eng
+(eng "going")
+; "go"
+```
+
+## Updates
+
+- Updated to Clojure 1.3
 
 ## License
 
